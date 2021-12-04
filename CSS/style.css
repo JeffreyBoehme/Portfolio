@@ -309,7 +309,7 @@ color: #E5E5E5;
 }
 
 footer{
-  position:fixed;
+  position:static;
   bottom:0px;
   text-align:center;
   width:100%;
@@ -348,10 +348,13 @@ footer p{
   background-color: #000000;
 }
 .waveyBoi{
-    position: fixed;
+    position:absolute;
     bottom: 0;
     left: 0;
     width:100%;
+}
+.expand{
+  height:100vh;
 }
 
 .flex { /*Flexbox for containers*/
