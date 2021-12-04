@@ -1,7 +1,7 @@
 body {
   margin:5px 5px 5px 5px;
   background-color: #000000 !important;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .navbar-custom {
