@@ -54,12 +54,31 @@ margin-top:13px;
   justify-content:space-evenly;
   align-items: center;
   margin-bottom:15vh;
+  flex-wrap:wrap;
+  background-color:black !important;
 }
 
 .contactForm{
 display:flex;
 Flex-direction:column;
 align-items: center;
+
+}
+
+.contactFormWrapper{
+  background-color: rgb(240,248,255);
+  padding:25px;
+  border-radius:25px;
+}
+
+.contactFlexItem{
+  min-width:300px;
+  min-height:300px;
+  max-width:300px;
+  max-height:600px;
+  justify-content:center;
+  align-items: center;
+  text-align:center;
 
 }
 
@@ -354,7 +373,7 @@ footer p{
     width:100%;
 }
 .expand{
-  height:100vh;
+  height:101vh;
 }
 
 .flex { /*Flexbox for containers*/
@@ -784,7 +803,11 @@ figure.effect-honey:hover h2 i {
 /* ABOUT PAGE WORD WRAPPER ANIMATION */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  }
+@media (max-width: 576px) { 
+  .navbar-CustomBrand {
+  font-size: 30px !important;
+  } 
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
