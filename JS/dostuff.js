@@ -17,31 +17,10 @@ menuButton.addEventListener('click', () => {
 });
 
 //Email
-$(document).ready(init);
-
-function init(jQuery) {
-  CurrentYear();
-}
-
-function CurrentYear() {
-  var thisYear = new Date().getFullYear()
-  $("#currentYear").text(thisYear);
-}
-
-
-/* reCAPTCHA */
-
-function validateResponse(response) {
-//  if !(response === "" || response == undefined || response.length == 0) {
-  if (response.length > 0) {
-    showOutput(response);
-//    alert(response);
-  }
-};
-
-function showOutput(msg) {
-  document.getElementById("txtOutput").innerHTML = msg;
-}
+$('a.mail').on('click', function(){
+    var href = $(this).attr('href');
+    $(this).attr('href', href.replace('badmail.', ''));
+});
 
 
 
