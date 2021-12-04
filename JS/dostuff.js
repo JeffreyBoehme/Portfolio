@@ -19,7 +19,7 @@ menuButton.addEventListener('click', () => {
 //Email
 $('a.mail').on('click', function(){
     var href = $(this).attr('href');
-    $(this).attr('href', href.replace('badmail.', ''));
+    $(this).attr('href', href.replace('badmailtostopbots', 'jeff-b'));
 });
 
 
